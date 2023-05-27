@@ -1,0 +1,30 @@
+Nombre: Rent This Car
+Mensaje: Confianza, Seguridad, Modernidad, Todo Presupuesto.
+Usuarios: Familias que necesitan coches para vacacionar.
+
+1 sola pagina es suficiente
+
+Header:
+	.Nav-bar desplegable hacia abajo lado izquierdo
+	.Logo en el centro
+	.Redes sociales a la derecha
+
+Hero:
+	.Slogan
+	.Breve texto
+	.Imagenes de familia vacaionando felizmente.
+
+Section 1:
+	.Trayectoria.
+	.Pequeño resumen de la empresa.
+
+Section 4: 
+	.Reseñas de Usuarios
+
+Section 2:
+	.Modelos de autos de alquiler.
+	.Info: Modelo, Marca, Consumo, Velocidad recomendada de manejo, Precio Diario, Semanal, Mensual.
+
+Section 3:
+	.Contactos en detalle
+

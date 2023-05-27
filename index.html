@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rentacar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Rent This Car</title>
+</head>
+<body>
+    <section class="general-header">
+        <div class="nav-bar">
+            <img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\MenuIconOpen.jpg" alt="nav-bar-open-menu" class="nav-bar-open-menu">
+            <ul class="nav-bar-list">
+                <a class="nav-bar-button">Home</a>
+                <a class="nav-bar-button">Hechos</a>
+                <a class="nav-bar-button">Nuestros Servicios</a>
+                <a class="nav-bar-button">Reseñas</a>
+                <a class="nav-bar-button">Contactos</a>
+            </ul>
+        </div>
+        <div class="logo-container">
+            <img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\icon.jpg" alt="icono" class="header-icon">
+        </div>
+        <div class="social-media">
+            <a href="" ><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\lofoInstagramBlanco.jpg" alt="" class="instragram contactIcon"></a>
+            <a href="" ><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\lofoYTBlanco.jpg" alt="" class="youtube contactIcon"></a>
+            <a href="" ><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\lofoFBBlanco.png" alt="" class="facebook contactIcon"></a>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-text-container">
+        <h3 class="hero-tittle">Viaja por Argentina con tu Rent This Car</h3>
+        <p class="hero-text">Mas de 2000 familias eligieron viajar mas comodos por toda la extencion del pais
+            , gracias a contratar nuestros servicios, en el 2022.</p>
+        </div>
+        <img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\header-img.jpg" alt="" class="hero-img">
+    </section>
+    <section class="trayectoria">
+        <div class="autos-alquilados-mes"><p class="num">256</p>Vehiculos contratados este mes</div>
+        <div class="score"><p class="num">4.8/5</p>Tripadvisor</div>
+        <div class="puntos-de-apoyos"><p class="num" id="sucursales-num">50</p> Sucursales a nivel pais</div>
+        <div class="years-lider" style="border:1px solid white"><p class="num">4</p> Años siendo lideres en el mercado local</div>
+    </section>
+    <section class="car-modal">
+        <h3 class="review-tittle incar-modal">Nuestros Vehiculos</h3>
+        <div class="img-mini-container">
+            <img src="Assets\sandero-img1-fondoblanco.jpg" id="sandero-img-btn">
+            <img src="Assets\corolla-img1-fondoblanco.jpg" id="corolla-img-btn">
+            <img src="Assets\tiguan-img1-fondo-blanco.jpg" id="tiguan-img-btn">
+            <img src="Assets\amarok-img1-fondoblanco.jpg" id="amarok-img-btn">
+            <img src="Assets\mercedezBenz-img1-fondoBlanco.jpg" id="mercedez-img-btn">
+        </div>
+        <div class="display-car"></div>
+    </section>
+    <section class="reviews-section">
+        <h3 class="review-tittle">Reseñas de nuestros clientes</h3>
+        <div class="reviews">
+                <div class="review-card loader"></div>
+                <div class="review-card loader"></div>
+                <div class="review-card loader"></div>
+        </div>
+        <div class="button-container">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+    </section>
+    <section class="contact-section">
+        <h3 class ="review-tittle" id="contact-tittle">Como contactarnos</h3>
+        <div id="contact-section-map"></div>
+        <div class = "info-box">
+            <h3 class="location">Ubicacion : Av Costanera Rafael Obligado 1460</h3>
+            <h3 class="tel">Tel: +54 011 29949949</h3>
+            <h3 class="horario">Horario : Lu a Lu 24hs</h3>
+        </div>
+        <div class="redes">
+            <div class="facebook"><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\logoFB.png" class="contact-section-socialNetwork-icon">RentThisCar</div>
+            <div class="youtube"><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\logoYT.jpg" class="contact-section-socialNetwork-icon">RentThisCar</div>
+            <div class="instagram"><img src="C:\Users\leito\Documents\Programacion\WebDev\RentACar\src\Assets\logoInstagram.jpg" class="contact-section-socialNetwork-icon">RentThisCar</div>
+        </div>
+    </section>
+    <section class="footer">
+        <h5 class="copyright">Todos los derechos reservados. Copyright</h5>
+    </section>
+</body>
+<script src="RentThisCar.js"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+defer
+></script>
+</html>

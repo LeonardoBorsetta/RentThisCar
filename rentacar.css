@@ -1,0 +1,535 @@
+/*
+Color Base: rgb(63,71,206)
+*/
+/********************/
+.loader{
+    animation: glow 5s ease infinite ;
+}
+@keyframes glow {
+    0%,100%{background-color: white}
+
+    50%{background-color:#3741ff71}
+}
+/***********************/
+body{
+    margin:24px;
+}
+.general-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+.nav-bar-open-menu{
+    cursor: pointer;
+    width:32px;
+    padding-right: 0px;
+}
+.nav-bar-open-menu:hover{
+    width:34px;
+    margin-right:-2px;
+}
+.nav-bar-open-menu:active{
+    width:34px;
+    margin-right:-2px;
+}
+.nav-bar-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: -40px;
+    width: fit-content;
+    background-color: white;
+    left: -168px;
+    transition: all ease 0.5s;
+}
+.nav-bar-button{
+    font-family: "Roboto";
+    width: auto;
+    text-align: center;
+    font-size: 21px;
+    line-height: 30px;
+    margin: 0px;
+    margin-left: -40px;
+    text-decoration: none;
+    color: black;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(77, 77, 255);
+    border-right: 1px solid rgb(77,77,255);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.nav-bar-button:hover{
+    background-color: rgb(115, 115, 255);
+    border-bottom:  1px solid rgb(21, 21, 255);
+}
+.nav-bar-open-menu{
+    width: 32px;
+    height: 32px;
+    transition:all ease-in 0.3s;
+}
+.header-icon{
+    margin-top: -24px;
+    padding: 0px;
+    margin-bottom: -12px;
+}
+.contactIcon{
+    width: 32px;
+}
+/*Hero-section*/
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #F6F7FF;
+    height: 520px;
+}
+.hero-text-container{
+    margin-top: 20px;
+    width: 40%;
+}
+.hero-tittle{
+    font-size: 48px;
+    font-family: "Rubik", sans-serif;
+    color: rgb(8,9,26);
+}
+.hero-text{
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color:rgb(19,22,64);
+}
+.hero-img{
+    margin-top: 40px;
+    margin-left: -184px;
+    border-radius: 10px;
+    width: 400px;
+}
+/*Trayectoria*/
+.trayectoria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-self: center;
+    padding-top: 64px;
+}
+.trayectoria div{
+    width: 15%;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto";
+    border-right: 1px solid #A8AFFF;
+    padding-right: 56px;
+}
+.years-lider{
+    border-right:1px solid white;
+}
+.num{
+    font-size: 48px;
+    font-family: "Rubik";
+}
+/*Review*/
+.reviews-section{
+    background-color: #F6F7FF;
+    color: rgb(8,9,26);
+    padding-bottom: 64px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-top: 64px;
+}
+.review-tittle{
+    font-size: 40px;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 64px;
+}
+.review-card-img{
+    width: 64px;
+}
+.review-card{
+    background-color: white;
+    width: 25%;
+    height: 240px;
+    text-align: center;
+    border: 3px solid #A8AFFF;
+    border-radius: 10px;
+    margin: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.review-person{
+    font-size: 32px;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+.review-text{
+    font-size: 21px;
+    font-family: "Roboto", sans-serif;
+    color:rgb(19,22,64);
+}
+.button-container{
+    width: min-content;
+    display: flex;
+    position: relative;
+    left: 35.5%;
+}
+.button-container button{
+    margin: 16px;
+    width: 160px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    background: #272C80;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #08091A;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.button-container button:hover{
+    background-color: #242fff;
+    color:#12143b;
+}
+.button-container button:active{
+    border-color:#A8AFFF;
+}
+
+/*******CarModel********/
+.car-modal{
+    height: 700px;
+}
+.review-tittle.incar-modal{
+    margin-top: -24px;
+    padding-top:64px;
+    height:70px;
+}
+.img-mini-container{
+    display: flex;
+    flex-direction: column;
+    width: 112px;
+    height: 112px;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+.img-mini-container img{
+    margin:8px;
+    border:solid 2px #A8AFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.display-car{
+    border: 3px solid #A8AFFF;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    position: relative;
+    top: -96px;
+    left: 320px;
+    padding: 16px;
+    padding-right:40px;
+    display: flex;
+    flex-direction: column;
+}
+.display-car-tittle{
+    font-family: "Rubik", serif;
+    font-size: 48px;
+    margin: 16px;
+    text-align: center;
+}
+.car-show-img{
+    width:500px;
+}
+.facts-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 514px;
+    width: 216px;
+    position: absolute;
+    top: 120px;
+}
+.facts-container div{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    border: 1px solid #08091A;
+    border-radius: 10px;
+    background-color: #12143b;
+    color: #F6F7FF;
+    padding-block: 8px;
+    padding-inline: 16px;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+.sin-disponibilidad{
+    background-color: rgb(0 0 0 / 82%);
+    z-index: 999;
+    width: 725px;
+    height: 240px;
+    position: absolute;
+    border: 2px solid black;
+    color: white;
+    font-size: 48px;
+    font-family: "rubik";
+    text-align: center;
+    padding-top: 150px;
+}
+/******Contact Section**********/
+.contact-section{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #A8AFFF;
+}
+#contact-tittle{
+    position: absolute;
+    padding-top: 0px;
+    margin-top: 32px;
+}
+#contact-section-map{
+    width: 400px;
+    height: 520px;
+    border: 2px solid #08091A;
+    border-radius: 10px;
+    margin-top: 64px;
+}
+.info-box{
+    border: 2px solid #08091A;
+    border-radius: 10px;
+    background-color: #F6F7FF;
+    text-align: center;
+    width: 320px;
+    height: 360px;
+    margin-block: 128px;
+    position: relative;
+    left: -72px;
+    font-family: "Rubik",sans-serif;
+    font-size: 21px;
+}
+.info-box h3{
+    margin-block: 64px;
+}
+.contact-section-socialNetwork-icon{
+    width: 64px;
+}
+.redes{
+    position: relative;
+    left: -120px;
+    top: 128px;
+}
+.redes div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    margin-block: 32px;
+    cursor: pointer;
+    font-size: 32px;
+    padding-block: 8px;
+    padding-inline: 16px;
+    border:2px solid #12143b00;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.redes div:hover{
+    border:2px solid #12143b;
+    border-radius: 10px;
+}
+.redes div img{
+    margin-right:16px;
+}
+/*************Footer*************/
+.footer{
+    background-color: #08091A;
+    height: 150px;
+    margin-top: -16px;
+}
+.footer h5{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-block: 16px;
+    margin-inline: 8px;
+    padding-top: 16px;
+    font-family:"roboto", sans-serif
+}
+
+
+/*Media Queries**/
+
+@media (max-width : 500px) {
+    .hero{
+        height: 900px;
+    }
+    .hero-img{
+        position: relative;
+        left:80px;
+    }
+    .hero-text-container{
+        position: relative;
+        top:px;
+        left:-40px;
+    }
+    .hero-tittle{
+        width:80vw;
+    }
+    .hero-text{
+        width: 80vw;
+    }
+    .trayectoria{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -32px;
+    }
+    .trayectoria div{
+        width: 70vw;
+        border-bottom: 1px solid #A8AFFF;
+        border-right: 1px solid #ffffff00;
+        padding-right: 0px;
+        padding-bottom: 8px;
+    }
+    .img-mini-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:90vw;
+        height: 112px;
+        position: relative;
+        left:-5%;
+        top: 0px;
+    }
+    .img-mini-container img{
+        width:56px;
+        margin:8px;
+        border:solid 2px #A8AFFF;
+        border-radius: 10px;
+        cursor: pointer;
+   }
+   .display-car{
+    border: 3px solid #A8AFFF;
+    border-radius: 10px;
+    width: 75vw;
+    height:480px;
+    position: relative;
+    top: 0px;
+    left: -8px;
+    padding: 16px;
+    padding-right:40px;
+    display: flex;
+    flex-direction: column;
+    }
+    .display-car-tittle{
+        font-family: "Rubik", serif;
+        font-size: 24px;
+        margin: 8px;
+        text-align: center;
+    }
+    .car-show-img{
+        width:300px;
+    }
+    .facts-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        left:16px;
+        width: 300px;
+        position: absolute;
+        top: 240px;
+    }
+    .facts-container div{
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        border: 1px solid #08091A;
+        border-radius: 10px;
+        background-color: #12143b;
+        color: #F6F7FF;
+        padding-block: 8px;
+        padding-inline: 16px;
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+    .sin-disponibilidad{
+        background-color: rgb(0 0 0 / 82%);
+        z-index: 999;
+        width: 300px;
+        height: 340px;
+        position: absolute;
+        border: 2px solid black;
+        color: white;
+        font-size: 32px;
+        font-family: "rubik";
+        text-align: center;
+        padding-top: 150px;
+    }
+    .reviews-section{
+        height: 700px;
+        margin-bottom: 500px;
+        width: 90vw;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .review-card{
+        width: 70vw;
+        height: 280px;
+    }
+    .button-container{
+        left: -8%;
+    }
+    .contact-section{
+        height: fit-content;
+    }
+    #contact-section-map{
+        border: 2px solid #08091A;
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+        position: relative;
+        top:80px
+    }
+    .info-box{
+        border: 2px solid #08091A;
+        border-radius: 10px;
+        background-color: #F6F7FF;
+        text-align: center;
+        width: 300px;
+        height: 160px;
+        margin-top:96px;
+        position: relative;
+        left: 0px;
+        top:0px;
+        font-family: "Rubik",sans-serif;
+        font-size: 16px;
+    }
+    .info-box h3{
+        margin-block: 16px;
+    }
+    .redes{
+        left:0px;
+        top:-80px;
+    }
+}
